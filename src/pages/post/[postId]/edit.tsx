@@ -23,7 +23,7 @@ export default function Edit() {
   const { postId } = router.query;
   const [titleValidationErrors, setTitleValidationErrors] = useState("");
   const [contentValidationErrors, setContentValidationErrors] = useState("");
-  const api = `http://localhost:18080/v1/note/${postId}`;
+  const api = `http://localhost:5000/posts/${postId}`;
 
   // 対象の詳細データを取得
   const { data, isLoading, isError } = FeatchDetail();
