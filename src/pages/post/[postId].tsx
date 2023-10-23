@@ -26,7 +26,7 @@ export default function Details() {
   };
 
   const onDelete = () => {
-    const api = `http://localhost:18080/v1/note/${postId}`;
+    const api = `http://localhost:5000/posts/${postId}`;
     axios
       .delete(api)
       .then(() => {
