@@ -11,7 +11,7 @@ type DeleteModalProps = {
   onDelete: () => void;
 };
 
-export const useDeleteModal = () => {
+export const useDeletePost = () => {
   const router = useRouter();
   const { postId } = router.query;
 

@@ -2,7 +2,7 @@
 
 import React from "react";
 import ModalStyle from "./ModalStyle.module.css";
-import { useDeleteModal } from "./DeleteModal";
+import { useDeletePost } from "./useDeletePost";
 
 //modalの型定義
 type ModalProps = {
@@ -17,7 +17,7 @@ const Modal: React.FC<ModalProps> = (props) => {
   };
 
   //DeleteModalを呼び出し
-  const { onDelete } = useDeleteModal();
+  const { onDelete } = useDeletePost();
 
   return (
     <>
