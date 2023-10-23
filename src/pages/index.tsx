@@ -6,9 +6,7 @@ import index from "./index.module.css";
 
 const createPath = "/post/create";
 
-type ApiResponse = {
-  items: posts[];
-};
+type ApiResponse = posts[];
 
 export default function Home() {
   const queryClient = new QueryClient();
@@ -22,7 +20,7 @@ export default function Home() {
     try {
       const response = await axios.get<ApiResponse>(api);
       console.log(response.data);
-      return response.data.items;
+      return response.data;
     } catch (err) {
       throw new Error("データの取得に失敗しました");
     }
