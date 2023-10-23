@@ -1,0 +1,7 @@
+package.jsonに
+  "scripts": {
+    "json-server": "json-server --watch db.json --port 5000"
+  },
+
+json-server立ち上げコマンド
+npm run json-server
