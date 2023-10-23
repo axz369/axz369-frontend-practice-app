@@ -1,0 +1,52 @@
+
+.container{
+    width: 1200px;
+    margin: auto;
+}
+.h1{
+    margin: 50px;
+}
+.itemTitle{
+    background-color: rgb(240, 238, 229);
+    margin: 30px;
+    padding: 30px;
+    text-align: center;
+    border-radius: 20px;
+    
+}
+.title{
+    color: #000;
+    text-decoration: none; 
+    font-size: 20px;
+}
+.title:hover{
+    color: rgb(73, 73, 73);
+}
+
+
+
+
+/* 追加ボタン */
+.addBtn{
+    width: 200px;
+    padding: 10px;
+    margin: auto;
+    margin-top: 90px;
+    background-color: rgb(95, 255, 202);
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 10px 10px 15px -10px;
+}
+.addBtn:hover{
+    background-color: rgb(174, 255, 228);
+}
+.addBtn:active{
+    box-shadow: none;
+}
+.add{
+    margin: auto;
+    color: #000;
+    text-decoration: none;
+    font-size: 40px;
+    text-align: center;
+}
