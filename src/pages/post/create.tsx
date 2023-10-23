@@ -9,7 +9,7 @@ import React from "react";
 import { yupResolver } from "@hookform/resolvers/yup";
 import { postsScheme } from "@/types/validation";
 
-const api = "http://localhost:18080/v1/note";
+const api = "http://localhost:5000/posts";
 
 export default function Create() {
   const {
