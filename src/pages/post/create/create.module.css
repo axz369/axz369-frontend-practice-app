@@ -1,0 +1,30 @@
+/* 入力フォーム */
+.form {
+  width: 1000px;
+}
+.titleErea {
+  width: 100%;
+  padding: 20px;
+  font-size: 30px;
+  margin-bottom: 15px;
+  border-width: 3px;
+  border-color: rgb(144, 144, 144);
+}
+.contentErea {
+  width: 100%;
+  padding: 20px;
+  height: 500px;
+  font-size: 15px;
+  border-width: 3px;
+  border-color: rgb(144, 144, 144);
+}
+/* ここまで入力フォーム */
+
+/* createボタン */
+.createButtonContainer {
+  text-align: center;
+}
+
+.validationMessage {
+  color: red;
+}

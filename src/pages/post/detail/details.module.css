@@ -1,0 +1,23 @@
+.title {
+  color: #000;
+  text-decoration: none;
+  font-size: 30px;
+  margin-bottom: 50px;
+  background-color: rgb(241, 241, 241);
+  border-radius: 5px;
+  padding: 40px;
+}
+
+.content {
+  font-size: 20px;
+  background-color: rgb(241, 241, 241);
+  border-radius: 5px;
+  padding: 40px;
+}
+
+/* 削除と編集ボタン */
+.buttons {
+  width: 200px;
+  display: flex;
+  justify-content: space-between;
+}
