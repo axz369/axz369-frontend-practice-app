@@ -13,6 +13,8 @@ import { baseURL } from "@/baseURL";
 import { Button } from "@/components/Button/index";
 import { Title } from "@/components/Title/index";
 import { Container } from "@/components/Container/index";
+import { Input } from "@/components/TextField/input";
+import {Textarea} from "@/components/TextField/textarea";
 
 export default function Edit() {
   //useFromからフォーム制御に必要なものを取得する
@@ -77,15 +79,14 @@ export default function Edit() {
             <label htmlFor="title">タイトル:</label>
             {/* reactHookFromと連携させるためにControllerコンポーネントを使用する */}
             <Controller
-              name="title" //deta.titleになる部分
-              control={control} //これでnameの追跡ができるようになるらしい
-              // render={({ field })で変更がReact Hook Formによって追跡され制御できるらしい
+              name="title"
+              control={control}
               render={({ field }) => (
-                <input
+                <Input
                   defaultValue={data && data.title}
                   className={create.titleErea}
                   type="text"
-                  {...field}
+                  {...field} // この部分でInputコンポーネントにfieldのpropsを渡す
                 />
               )}
             />
@@ -97,7 +98,7 @@ export default function Edit() {
               name="content"
               control={control}
               render={({ field }) => (
-                <textarea
+                <Textarea
                   defaultValue={data && data.content}
                   className={create.contentErea}
                   {...field}

@@ -3,22 +3,17 @@
     {
       "id": 1,
       "title": "title",
-      "author": "typicode1"
+      "content": "typicode1"
     },
     {
       "id": 2,
       "title": "title2",
-      "author": "typicode2"
+      "content": "typicode2"
     },
     {
       "id": 3,
       "title": "title3",
-      "author": "typicod3"
-    },
-    {
-      "title": "g",
-      "content": "sdf",
-      "id": 4
+      "content": "typicod3"
     }
   ]
 }
